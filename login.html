@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	  <title>login</title>
+	  
+  <style type="text/css">
+  /* Inicio estilos basicos da pagina*/
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("https://ae01.alicdn.com/kf/HTB1BeO.KVXXXXc0XpXXq6xXFXXXE/Papel-de-parede-3d-para-pintura-murais-livros-de-fundo-mural-de-papel-de-parede-3d.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+/* Especificações do container*/
+.container {
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    
+}
+    
+.container h1 {
+    text-align: center;
+    color: #994400;
+    margin-bottom: 30px;
+    
+}
+    
+.container input[type="text"], .container input[type="email"], .container input[type="password"] {
+    width: 80%;
+    padding: 9px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+    
+.container input[type="submit"] {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #994400;
+        color: #fff;
+        font-size: 1px;
+        cursor: pointer;
+}
+
+
+/* Estilos para o menu */
+.menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+        background-color: #4F4F4F;
+        padding: 0 20px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.search-container {
+    margin-right: auto;
+}
+.buton-container {
+  display: flex;
+
+}
+
+
+.menu input[type="text"] {
+   width: 150px;
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+   font-size: 16px;
+   margin-right: 10px;
+}
+.menu input[type="submit"] {
+   padding: 10px;
+   border: none;	
+   border-radius: 3px;
+   background-color: #FFA865;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+
+/* estilos para os botões */
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-login {
+  background-color: #D15E00;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+.button-register {
+  background-color: #994400;
+  margin-right: 5px;
+  padding-right: 5px;
+}
+
+/* Estilos Tabelas*/
+table {
+    width: max-content; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+/* Estilos de Informações da pagina*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    transform-origin: top left;
+    text-align: right;
+
+}
+
+.author {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    margin: 20px;
+}
+
+.image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.description{
+    text-align: center;
+}  
+
+  </style>
+
+</head>
+<body>
+
+      <!-- Configurações do menu -->
+      <div class="menu">
+		    <div class="search-container">
+			    <input type="text" placeholder="Buscar livros..." required>
+			    <input type="submit" value="Pesquisar">
+		    </div>
+        
+        <div class="buton-container">
+  		    <form  action="/login" method="GET">
+  		        <button class="button button-login"         
+              type="submit">Entrar</button>
+  	      </form>
+          
+          <form  action="/cadastro" method="GET">
+  		        <button class="button button-register"         
+              type="submit">Cadastrar</button>
+  	      </form>
+        </div>
+	    </div>
+
+      <!-- Configurações do formulario de login -->
+      
+    <div class="container">
+      <form action="/entrar" method="POST">
+        <h1>Login</h1>
+        <div class="form-group">
+          <label for="email"></label>
+          <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        </div>
+        <div class="form-group">
+          <label for="senha"></label>
+          <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+        </div>
+        <button type="submit" class="button button-login">Login</button>
+      </form>
+    </div>
+
+</body>
+</html>
+</style>
+</head>

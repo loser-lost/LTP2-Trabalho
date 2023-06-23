@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Formulário de Cadastro</title>
+	<link rel="stylesheet" href="styles.css">
+  <style type="text/css">
+  
+
+/* Inicio estilos basicos da pagina*/
+html {
+    height: 100%;
+}
+
+body {
+    background-image: url("https://ae01.alicdn.com/kf/HTB1BeO.KVXXXXc0XpXXq6xXFXXXE/Papel-de-parede-3d-para-pintura-murais-livros-de-fundo-mural-de-papel-de-parede-3d.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+/* Especificações do container*/
+.container {
+    width: auto;
+    height: auto;
+    background: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 20px;
+    
+}
+    
+.container h1 {
+    text-align: center;
+    color: #306b8d;
+    margin-bottom: 20px;
+    
+}
+    
+.container input[type="text"], .container input[type="email"], .container input[type="password"] {
+    width: 90%;
+    padding: 9px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+    
+.container input[type="submit"] {
+        width: 40%;
+        padding: 10px;
+        border: none;
+        border-radius: 3px;
+        background-color: #306b8d;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+}
+
+
+/* Estilos para o menu */
+.menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        height: 50px;
+        background-color: #4F4F4F;
+        padding: 0 20px;
+}
+
+.menu a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.search-container {
+    margin-right: auto;
+}
+
+.menu input[type="text"] {
+   width: 150px;
+   padding: 10px;
+   border: none;
+   border-radius: 3px;
+   font-size: 16px;
+   margin-right: 10px;
+}
+.menu input[type="submit"] {
+   padding: 10px;
+   border: none;	
+   border-radius: 3px;
+   background-color: #306b8d;
+   color: #fff;
+   font-size: 16px;
+   cursor: pointer;
+}
+
+
+/* estilos para os botões */
+.button {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-login {
+    background-color: #306b8d;
+}
+
+.button-register {
+    background-color: #ff8c00;
+}
+
+/* Estilos Tabelas*/
+table {
+    width: max-content; 
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+th {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+/* Estilos de Informações da pagina*/
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 20px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    transform-origin: top left;
+    text-align: right;
+
+}
+
+.author {
+    font-size: 18px;
+    font-style: italic;
+    margin-top: 10px;
+    margin: 20px;
+}
+
+.image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.description{
+    text-align: center;
+}  
+
+  </style>
+
+</head>
+<body>
+	<!-- Configurações do menu -->
+	<div class="menu">
+		<div class="search-container">
+			<input type="text" placeholder="Buscar" required>
+			<input type="submit" value="Enviar">
+		</div>
+		<form  action="/login" method="GET">
+		<button class="button button-login"         
+      type="submit">Entrar</button>
+	   </form>
+    <form  action="/cadastro" method="GET">
+		<button class="button button-register"         
+      type="submit">Cadastrar</button>
+	   </form>
+	</div>
+
+	<!-- Configurações da pagina de usuario-->
+		<div class="container">
+  			<img class="image" src="">
+			<div class="title">Nome
+			<div class="info">Fale sobre voce</div> 
+			<div class="description">Livros preferidos</div>
+		</div>
+		</div>
+
+</body>
+</html>
