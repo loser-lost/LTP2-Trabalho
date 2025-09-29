@@ -21,7 +21,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 
 * **Backend:**
     * **Python 3:** Utilizado para toda a lógica do servidor e manipulação de dados.
-    * **Flask: **
+    * **Flask** 
 * **Banco de Dados:**
     * **SQLite:** Usado para armazenar os dados de usuários e livros de forma persistente.
 * **Frontend:**
