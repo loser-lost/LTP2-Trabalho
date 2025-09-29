@@ -29,24 +29,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 
 ---
 
-## ⚙️ Como Executar o Projeto
+## 👨‍💻 Autor
 
-Para rodar este projeto localmente, seu ambiente precisa ter o **Python 3** instalado. Depois, siga os passos abaixo:
+* **[Michael Israel Sousa Santos]** - [michaelisrael2000@gmail.com]
 
-```bash
-# 1. Clone este repositório
-$ git clone [https://github.com/loser-lost/LTP2-Trabalho](https://github.com/loser-lost/LTP2-Trabalho)
-
-# 2. Acesse a pasta do projeto no seu terminal
-$ cd LTP2-Trabalho
-
-# 3. (Opcional) Instale as dependências
-# Se houver um arquivo requirements.txt, execute o comando abaixo
-$ pip install -r requirements.txt
-
-# 4. Inicie a aplicação
-# Execute o arquivo principal do projeto (pode ser app.py, main.py, etc.)
-$ python app.py
-
-# 5. Abra o seu navegador e acesse o endereço local
-# Geralmente [http://127.0.0.1:5000](http://127.0.0.1:5000) ou http://localhost:5000
