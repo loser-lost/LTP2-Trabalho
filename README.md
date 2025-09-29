@@ -22,7 +22,7 @@ O projeto foi construído utilizando as seguintes tecnologias:
 * **Backend:**
     * **Python 3:** Utilizado para toda a lógica do servidor e manipulação de dados.
 * **Banco de Dados:**
-    * **SQLite (ou similar):** Usado para armazenar os dados de usuários e livros de forma persistente.
+    * **SQLite:** Usado para armazenar os dados de usuários e livros de forma persistente.
 * **Frontend:**
     * **HTML5:** Para a estruturação das páginas e formulários.
     * **CSS3:** Para a estilização e o design visual da interface.
